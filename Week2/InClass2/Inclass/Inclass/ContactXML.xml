@@ -1,0 +1,43 @@
+<Contacts> 
+		<LatestVersion>10/05/2016</LatestVersion>
+		<CurrentVersion>10.0</CurrentVersion>
+	<Contact sex="M"> 
+		<FirstName>Tony</FirstName> 
+		<LastName>Fiori</LastName> 
+		<PhoneNumber>401-999-9999</PhoneNumber>
+		<FaxNumber>401-999-9999</FaxNumber>
+		<EmailAddress>Test@test.com</EmailAddress>		
+	</Contact> 
+	
+	<Contact sex="M"> 
+		<FirstName>Anthony</FirstName> 
+		<LastName>Fiori</LastName> 
+		<PhoneNumber>401-999-9999</PhoneNumber>
+		<FaxNumber>401-999-9999</FaxNumber>
+		<EmailAddress>Test@test.com</EmailAddress>		
+	</Contact> 
+	
+	<Contact sex="M"> 
+		<FirstName>Dave</FirstName> 
+		<LastName>Greco</LastName> 
+		<PhoneNumber>401-999-9999</PhoneNumber>
+		<FaxNumber>401-999-9999</FaxNumber>
+		<EmailAddress>Test@test.com</EmailAddress>		
+	</Contact> 
+	
+	<Contact sex="M">
+		<FirstName>Angelo</FirstName> 
+		<LastName>Greco</LastName> 
+		<PhoneNumber>401-999-9999</PhoneNumber>
+		<FaxNumber>401-999-9999</FaxNumber>
+		<EmailAddress>Test@test.com</EmailAddress>		
+	</Contact> 
+	
+	<Contact sex="F"> 
+		<FirstName>Jenn</FirstName> 
+		<LastName>Fiori</LastName> 
+		<PhoneNumber>401-999-9999</PhoneNumber>
+		<FaxNumber>401-999-9999</FaxNumber>
+		<EmailAddress>Test@test.com</EmailAddress>		
+	</Contact> 	
+</Contacts>

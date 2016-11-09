@@ -1,0 +1,37 @@
+<SalesInvoice>
+	<DateOfInvoice>10/05/2016</DateOfInvoice>
+	<retailCode retail="Customer">
+	<Sale BillingInfo = 'UserBillng'>
+		<Name>Tony</Name>
+		<Address>65 Surf Drive</Address>
+		<City>Huntington</City>
+		<State>CA</State>
+		<Zip>9021</Zip>
+	</Sale>
+	</retailCode>
+	<Sale ShippingInfo = 'UserShipping'>
+		<Name>Tony</Name>
+		<Address>65 Surf Drive</Address>
+		<City>Huntington</City>
+		<State>CA</State>
+		<Zip>9021</Zip>
+	</Sale>
+	<items>
+		<item>
+		<sku>1025984</sku>
+		<description>Lime salt</description>
+		<quantity>50</quantity>
+		<unitPrice>25.00</unitPrice>
+		<Comments/>
+		</item>
+		
+		<item>
+		<sku>0000000</sku>
+		<description>Duck Tape</description>
+		<quantity>50</quantity>
+		<unitPrice>25.00</unitPrice>
+		<Comments/>
+		</item>
+	</items>
+	
+</SalesInvoice>

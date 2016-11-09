@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f8175620-dbc4-443d-bba6-c16f6cee9187" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62969/NEITStoresOrderService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NEITStoresOrderService.wsdl" MetadataType="Wsdl" ID="f94896a7-e9e8-4cc7-8f27-0aa4cf639eae" SourceId="1" SourceUrl="http://localhost:62969/NEITStoresOrderService.svc?wsdl" />
+    <MetadataFile FileName="NEITStoresOrderService.xsd" MetadataType="Schema" ID="81b6cf5c-a083-47ba-8706-91a6da5d8e99" SourceId="1" SourceUrl="http://localhost:62969/NEITStoresOrderService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NEITStoresOrderService1.xsd" MetadataType="Schema" ID="9c095931-b015-41e1-9565-3af6d1493eec" SourceId="1" SourceUrl="http://localhost:62969/NEITStoresOrderService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NEITStoresOrderService2.xsd" MetadataType="Schema" ID="31a66020-28c8-4a11-9d41-498e46b1f04e" SourceId="1" SourceUrl="http://localhost:62969/NEITStoresOrderService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NEITStoresOrderService.disco" MetadataType="Disco" ID="b5514b4a-074b-48e1-a48a-b62c52ec8c63" SourceId="1" SourceUrl="http://localhost:62969/NEITStoresOrderService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
