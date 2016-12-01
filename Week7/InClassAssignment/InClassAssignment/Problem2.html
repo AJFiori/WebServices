@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+
+        btnSubmit = function () {
+            var url = 'http://carma.org/api/1.1/searchLocations?name=' + myForm.eStateName.value;
+            // Cross platform xmlhttprequest
+
+            // Create xmlhttprequest object
+            var xmlhttp = null;
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+                //make sure that Browser supports overrideMimeType
+                if (typeof xmlhttp.overrideMimeType != 'undefined') { xmlhttp.overrideMimeType('text/xml'); }
+            } else if (window.ActiveXObject) {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            } else {
+                alert('Perhaps your browser does not support xmlhttprequests?');
+            }
+
+            // Create an HTTP GET request
+            xmlhttp.open('GET', url, true);
+
+
+            // Set the callback function
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var myObj = JSON.parse(xmlhttp.responseText);
+                    //myForm.cDegree.value = myObj.current_observation.feelslike_c;
+                    myForm.rName.value = myObj[0].name;
+                    myForm.rPlantCount.value = myObj[0].plant_count;
+                    myForm.rCarbonPast.value = myObj[0].carbon.past;
+                    myForm.rCarbonPresent.value = myObj[0].carbon.present;
+                    myForm.rCarbonFuture.value = myObj[0].carbon.future;
+
+
+                } else {
+                    // waiting for the call to complete
+                }
+            };
+            // Make the actual request
+            xmlhttp.send(null);
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Problem 2</h1>
+
+        <form name="myForm" action="">
+            Name:
+            <input type="text" id="rName" />
+            <br /><br />
+            Plant Count:
+            <input type="text" id="rPlantCount" />
+            <br /><br />
+            Carbon Past:
+            <input type="text" id="rCarbonPast" />
+            <br /><br />
+            Carbon Present:
+            <input type="text" id="rCarbonPresent" />
+            <br /><br />
+            Carbon Future:
+            <input type="text" id="rCarbonFuture" />
+            <br /><br />
+            Enter State Name:
+            <input type="text" id="eStateName" />
+            <br /><br />
+            <input onclick="btnSubmit()" type="button" value="Get Data" />
+        </form>
+
+    </center>
+
+</body>
+</html>

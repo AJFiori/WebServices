@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title></title>
+  
+<script type="text/javascript">
+
+    btnSubmit = function () {
+        var url = 'http://api.geonames.org/postalCodeSearchJSON?postalcode=' + myForm.zip.value + '&username=ajf1130';
+        // Cross platform xmlhttprequest
+
+        // Create xmlhttprequest object
+        var xmlhttp = null;
+        if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+            //make sure that Browser supports overrideMimeType
+            if (typeof xmlhttp.overrideMimeType != 'undefined') { xmlhttp.overrideMimeType('text/xml'); }
+        } else if (window.ActiveXObject) {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        } else {
+            alert('Perhaps your browser does not support xmlhttprequests?');
+        }
+
+        // Create an HTTP GET request
+        xmlhttp.open('GET', url, true);
+
+        // Set the callback function
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                var myObj = JSON.parse(xmlhttp.responseText);
+
+                
+            for (i = 0; i < myObj.postalCodes.length; i++) {
+                    document.write("<ul>");
+                    document.write("<li>");
+                    document.write(myObj.postalCodes[i].postalCode);
+                    document.write("</li>");
+                    document.write("</ul>");
+                }
+               
+            } else {
+                // waiting for the call to complete
+            }
+        };
+
+        // Make the actual request
+        xmlhttp.send(null);
+    }
+</script>
+</head>
+<body>
+    <center>
+        <h1>Problem 1</h1>
+
+        <form name="myForm" action="">
+            Enter Zip:
+            <input type="text" id="zip" />
+            <br /><br />
+            <input onclick="btnSubmit()" type="button" value="Get Data" />
+        </form>
+    </center>
+
+</body>
+</html>

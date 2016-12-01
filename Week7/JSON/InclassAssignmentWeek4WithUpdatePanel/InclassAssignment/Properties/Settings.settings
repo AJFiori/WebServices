@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="InclassAssignment.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InclassAssignment_net_webservicex_www_CCChecker" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.webservicex.net/CreditCard.asmx</Value>
+    </Setting>
+    <Setting Name="InclassAssignment_ConvertAcceleration_AccelerationUnit" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.webservicex.net/ConvertAcceleration.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
