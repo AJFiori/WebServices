@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>World News</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="worldNews.js"></script>
+    <script type="text/javascript" src="listOfSources.js"></script>
+    <link rel="stylesheet" type="text/css" href="Css.css" />
+</head>
+<body>
+    <!-- Begin of Nav -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navybar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand" href="newsIndex.html">News Services:</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navybar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="newsIndex.html">World News</a></li>
+                    <li><a href="localNews.html">Local News</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav> <!-- End of Nav -->
+    <center style="margin-top:5%;">
+        <p> List of news sources</p>
+        <select class="form-control" id="ddl" style="width:200px;"><option>Please Select Source:</option></select>
+        <br />
+        <input type="text" id="newsSource" hidden />
+        <input class="btn btn-info" onclick="btnSubmit()" type="button" value="Search" />
+        
+        <br /><br />
+        
+        
+        <table class="table table-hover" id="newsTable"></table>
+    </center>
+</body>
+</html>
+<script>
+    $('#ddl').change(function () {
+        $('#newsSource').val($('#ddl').val());
+    });
+</script>
