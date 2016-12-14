@@ -33,7 +33,10 @@ btnSubmit = function () {
                     $("#newsTable").append("<tbody><tr><td>"
                                    + "<img src='" + myObj.posts[i].thread.main_image + "' style='width:304px;height:228px;' />" + "<br/>"
                                    + "<strong>" + myObj.posts[i].thread.title_full + "</strong></br>"
-                                   + myObj.posts[i].text + " "
+                                   + "<strong>Author:</strong> " + myObj.posts[i].author + "<br/>"
+                                   + "<strong>Facebook Likes:</strong> " + myObj.posts[i].thread.social.facebook.likes + " "
+                                   + "<strong>Comments:</strong> " + myObj.posts[i].thread.social.facebook.comments + " "
+                                   + "<strong>Shares:</strong> " + myObj.posts[i].thread.social.facebook.shares + "<br/>"
                                    + "<a href=" + myObj.posts[i].thread.url
                                    + " target=_blank> Click For More Info  </a></td></tr>");
                 }
