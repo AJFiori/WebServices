@@ -3,7 +3,6 @@
     var source = document.getElementById("newsSource");
     var news = source.value.replace(" ", "-");
     var url = 'https://newsapi.org/v1/articles?source=' + news + '&sortBy=top&apiKey=cd52888677494997b8a81749a50a353d';
-    var table = document.getElementById("newsTable");
     // Cross platform xmlhttprequest
 
     // Create xmlhttprequest object

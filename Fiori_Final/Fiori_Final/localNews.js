@@ -5,7 +5,6 @@ btnSubmit = function () {
         var url = 'https://webhose.io/search?token=36999783-d2a3-416c-b0bd-558759a15af7&format=json&q=' + news + '&sort=relevancy';
 
 
-        var table = document.getElementById("newsTable");
         // Cross platform xmlhttprequest
 
         // Create xmlhttprequest object
